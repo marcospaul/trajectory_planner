@@ -1,0 +1,31 @@
+# Trajectory Analysis Configuration
+
+# Analyzer parameters
+analyzer_params:
+  detector_type: "integrated"
+  max_position_jump_m: 5.0
+  max_velocity_mps: 40.0
+  max_acceleration_mps2: 10.0
+  min_gps_jitter_m: 0.1
+  max_vibration_hz: 5.0
+
+# Directories to process
+data_directories:
+  - "./"
+  - "/Users/mgerard8/Library/CloudStorage/OneDrive-azureford/DAT3 Internal Access - Data Log/301W021/Max detection Range/Target at 60 deg/" 
+  - "/Users/mgerard8/Library/CloudStorage/OneDrive-azureford/DAT3 Internal Access - Data Log/301W021/Max detection Range/Target at 90 deg/"
+  - "/Users/mgerard8/Library/CloudStorage/OneDrive-azureford/DAT3 Internal Access - Data Log/301W021/Max detection Range/Target In lane/"
+
+# Analysis parameters
+analysis_params:
+  max_files_per_dir: 2
+  detailed_analysis: true
+  ml_analysis: true
+
+# Visualization settings
+visualization:
+  map_zoom: 14
+  max_animation_frames: 100
+  figure_width: 12
+  figure_height: 8
+  dpi: 100
